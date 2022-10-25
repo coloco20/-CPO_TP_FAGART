@@ -19,6 +19,7 @@ public class TP2_relation_1_FAGART {
         Voiture uneAutreClio = new Voiture("Clio", "Renault", 5);
         Voiture une2008 = new Voiture("2008", "Peugeot", 6);
         Voiture uneMicra = new Voiture("Micra", "Nissan", 4);
+        Voiture unvan = new Voiture("VW Van", "VW", 1);
         Personne bob = new Personne("Bobby", "Sixkiller");
         Personne reno = new Personne("Reno", "Raines");
         System.out.println("liste des voitures disponibles " + uneClio
@@ -46,7 +47,9 @@ public class TP2_relation_1_FAGART {
         une2008.proprietaire = reno ;
         System.out.println("la deuxieme voiture de reno est " + 
         reno.liste_voitures[1] ) ;
-
+        reno.ajouter_voiture(unvan) ;
+        System.out.println("la 3eme voiture de reno est " + 
+        reno.liste_voitures[2] ) ;
     }
 
 }
